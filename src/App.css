@@ -20,14 +20,12 @@ a {
   height: 800px;
 }
 
-
-
-
 header {
   background-color: #ffffff;
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   animation-name: navbar;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -57,7 +55,6 @@ header {
 }
 
 .main-image {
-
   animation-name: mainImage;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -72,12 +69,10 @@ header {
 
   50% {
     opacity: 5;
-
   }
 
   75% {
     opacity: 8;
-
   }
 
   100% {
@@ -86,36 +81,42 @@ header {
 }
 
 .main-image img {
-  margin: 150px 0px;
-  width: 600px;
-  height: 440px;
-
+  margin-right: 120px;
+  margin-bottom: 150px;
+  width: 500px;
+  height: 400px;
 }
 
 .welcome {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 700px;
 }
 
 .welcome-note {
   width: 100%;
-  margin: auto;
+  margin-left: 300px;
+  margin-bottom: 100px;
 
   font-size: 28px;
   text-align: center;
   animation-name: welcome;
   animation-duration: 3s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes welcome {
   0% {
+    opacity: 0;
     transform: translateY(-600px);
     background-color: #ffffff;
   }
 
   100% {
+    opacity: 10;
     transform: translateY(0);
   }
 }
@@ -157,8 +158,6 @@ header {
   overflow-x: auto;
   height: 300px;
 }
-
-
 
 .recent-heading,
 .alerts-heading,
@@ -215,6 +214,7 @@ header {
 @media screen and (max-width: 600px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
   }
 
   .welcome {
@@ -222,11 +222,14 @@ header {
   }
 
   .welcome-note {
-    margin: 300px 0 0 120px;
-
+    margin: 0;
   }
 
   .main-image img {
-    margin: 50px 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    width: 400px;
+    height: 300px;
   }
 }
