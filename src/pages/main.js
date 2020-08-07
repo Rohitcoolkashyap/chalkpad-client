@@ -33,7 +33,6 @@ export default function Main() {
 
   return (
     <div>
-
       <div className="main-content">
         <div className="recent-activity">
           <p className="recent-heading">Notices</p>
@@ -78,6 +77,25 @@ export default function Main() {
           </ul>
         </div>
       </div>
+
+      <section className="follow">
+        <p>Follow Us</p>
+        <a href="https://github.com/Rohitcoolkashyap">
+          <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img
+            src="https://i.ibb.co/vJvbLwm/social-twitter.png"
+            alt="twitter"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://i.ibb.co/b30HMhR/social-linkedin.png"
+            alt="linkedin"
+          />
+        </a>
+      </section>
     </div>
   );
 }
